@@ -5,8 +5,8 @@ software since before it was cool.
 
 I design and lead platforms that combine LLM agents, automation frameworks and
 verifiable infrastructure, and I ship them the boring way: ADR before code, falsifiable
-claims, everything self-hosted on Linux. Co-founder at Venere Labs; previously Head of
-AI at Kiara Industries and CTO in a couple of earlier ventures.
+claims, everything self-hosted on Linux. Currently co-founder of an AI research and
+engineering venture; previously head of AI and CTO roles across a few companies.
 
 #### Stack
 
