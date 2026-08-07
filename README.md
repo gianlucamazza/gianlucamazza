@@ -1,61 +1,61 @@
-### Gianluca Mazza
+# Gianluca Mazza
 
-Technologist and entrepreneur building intelligent agent systems — I've been writing
-software since before it was cool.
+I build **verifiable agent systems and low-level infra**: orchestration with
+real boundaries, capability/taint models that make unauthorized effects hard by
+construction, local LLM inference on odd hardware, and Bitcoin/finance tools
+that actually run.
 
-I design and lead platforms that combine LLM agents, automation frameworks and
-verifiable infrastructure, and I ship them the boring way: ADR before code, falsifiable
-claims, everything self-hosted on Linux. Currently co-founder of an AI research and
-engineering venture; previously head of AI and CTO roles across a few companies.
+Ship style: ADR before code, falsifiable claims, self-hosted on Linux.
+Co-founder of an AI research and engineering venture; previously head of AI and
+CTO roles.
 
-#### Stack
+## Selected work
 
-- **AI & agents** — agent orchestration, MCP servers, local LLM inference
-  (llama.cpp / GGUF, ONNX Runtime GenAI), RAG pipelines
-- **Languages** — Rust, Python, TypeScript, modern C++
-- **Bitcoin & crypto** — Bitcoin Core, Solana / Jupiter, zero-knowledge proofs
-- **Systems & infra** — Linux, systemd, Docker, Kubernetes, GitHub Actions
+**Agents & security**
 
-#### Selected work
+- [orka](https://github.com/gianlucamazza/orka) — agent orchestration in Rust:
+  multi-channel intake, priority queues, MCP/A2A, sandboxed skills
+- [reasoning-kernel](https://github.com/gianlucamazza/reasoning-kernel) — prompt
+  injection cannot produce an unauthorized effect by construction (CaMeL-style
+  capabilities + taint tracking)
+- [emotional-memory](https://github.com/gianlucamazza/emotional-memory) —
+  inspectable affective memory for LLMs with reproducible benchmarks
+  ([DOI](https://doi.org/10.5281/zenodo.19972258))
 
-**Agents & MCP**
-
-- [orka](https://github.com/gianlucamazza/orka) — modular agent orchestration platform
-  in Rust: priority queues, skill system, MCP/A2A, sandboxed execution
-- [reasoning-kernel](https://github.com/gianlucamazza/reasoning-kernel) — make prompt
-  injection structurally unable to cause an unauthorized effect: a CaMeL-style
-  capability and taint-tracking reference implementation
-- [mcp_python_toolbox](https://github.com/gianlucamazza/mcp_python_toolbox) ·
-  [mcp-duckduckgo](https://github.com/gianlucamazza/mcp-duckduckgo) ·
-  [mcp-ascii-charts](https://github.com/gianlucamazza/mcp-ascii-charts) — MCP servers
-  for Python development, web search and terminal charts
-- [agentroom](https://github.com/gianlucamazza/agentroom) — end-to-end encrypted
-  agent-to-agent chat (Double Ratchet) over
-  [msg2agent](https://github.com/gianlucamazza/msg2agent), the blind Go relay underneath
-
-**Systems & low-level**
+**Systems & strange hardware**
 
 - [xllama](https://github.com/gianlucamazza/xllama) — local LLM chat and Stable
-  Diffusion on an Xbox Series S|X: llama.cpp (GGUF) and ONNX Runtime GenAI, CPU and
-  DirectML
-- [harbor-kernel](https://github.com/gianlucamazza/harbor-kernel) — verified bare-metal
-  Rust kernel for the Raspberry Pi 4 (AArch64): cooperative tasks, EL0 agents, IPC,
-  W^X MMU
-- [uwp-crossbuild](https://github.com/gianlucamazza/uwp-crossbuild) ·
-  [openappx](https://github.com/gianlucamazza/openappx) — compile, package and sign
-  Windows/UWP apps entirely from Linux; the toolchain that makes the two Xbox projects
-  possible
+  Diffusion on Xbox Series S|X (llama.cpp GGUF + ONNX Runtime GenAI, CPU and
+  DirectML)
 
 **Bitcoin & finance**
 
-- [solana-mmaker](https://github.com/gianlucamazza/solana-mmaker) — market-making bot
-  automating strategies through the Jupiter swap protocol
-- [xbox_bitcoind](https://github.com/gianlucamazza/xbox_bitcoind) — pruned Bitcoin Core
-  full node running on Xbox Series S|X developer mode
-- [openfatture](https://github.com/gianlucamazza/openfatture) — CLI-first open-source
-  electronic invoicing (FatturaPA) for Italian freelancers
+- [solana-mmaker](https://github.com/gianlucamazza/solana-mmaker) — automated
+  market making on Solana through the Jupiter swap protocol
 
-#### Elsewhere
+**Also**
+
+- MCP: [mcp_python_toolbox](https://github.com/gianlucamazza/mcp_python_toolbox) ·
+  [mcp-duckduckgo](https://github.com/gianlucamazza/mcp-duckduckgo) ·
+  [mcp-ascii-charts](https://github.com/gianlucamazza/mcp-ascii-charts)
+- E2E agent chat: [agentroom](https://github.com/gianlucamazza/agentroom) over
+  [msg2agent](https://github.com/gianlucamazza/msg2agent)
+- Bare-metal Pi4 kernel: [harbor-kernel](https://github.com/gianlucamazza/harbor-kernel)
+- Xbox full node: [xbox_bitcoind](https://github.com/gianlucamazza/xbox_bitcoind)
+- Linux→UWP toolchain: [uwp-crossbuild](https://github.com/gianlucamazza/uwp-crossbuild) ·
+  [openappx](https://github.com/gianlucamazza/openappx)
+- FatturaPA CLI: [openfatture](https://github.com/gianlucamazza/openfatture)
+- LLM state-machine DSL: [mklang](https://github.com/gianlucamazza/mklang)
+
+## Stack
+
+- **AI & agents** — orchestration, MCP, local inference (llama.cpp / GGUF, ONNX
+  Runtime GenAI), evals and inspectable memory
+- **Languages** — Rust, Python, TypeScript, modern C++
+- **Bitcoin & crypto** — Bitcoin Core, Solana / Jupiter
+- **Systems** — Linux, systemd, Docker, cross-compile (UWP / AArch64 bare-metal)
+
+## Elsewhere
 
 [gianlucamazza.it](https://gianlucamazza.it) ·
 [LinkedIn](https://www.linkedin.com/in/gianlucamazza) ·
