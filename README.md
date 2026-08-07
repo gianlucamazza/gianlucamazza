@@ -35,16 +35,15 @@ CTO roles.
 
 **Also**
 
-- MCP: [mcp_python_toolbox](https://github.com/gianlucamazza/mcp_python_toolbox) ·
-  [mcp-duckduckgo](https://github.com/gianlucamazza/mcp-duckduckgo) ·
-  [mcp-ascii-charts](https://github.com/gianlucamazza/mcp-ascii-charts)
 - E2E agent chat: [agentroom](https://github.com/gianlucamazza/agentroom) over
   [msg2agent](https://github.com/gianlucamazza/msg2agent)
 - Bare-metal Pi4 kernel: [harbor-kernel](https://github.com/gianlucamazza/harbor-kernel)
-- Xbox full node: [xbox_bitcoind](https://github.com/gianlucamazza/xbox_bitcoind)
-- Linux→UWP toolchain: [uwp-crossbuild](https://github.com/gianlucamazza/uwp-crossbuild) ·
+- Xbox full node + Linux→UWP toolchain:
+  [xbox_bitcoind](https://github.com/gianlucamazza/xbox_bitcoind) ·
+  [uwp-crossbuild](https://github.com/gianlucamazza/uwp-crossbuild) ·
   [openappx](https://github.com/gianlucamazza/openappx)
-- FatturaPA CLI: [openfatture](https://github.com/gianlucamazza/openfatture)
+- MCP servers: [mcp_python_toolbox](https://github.com/gianlucamazza/mcp_python_toolbox) ·
+  [mcp-duckduckgo](https://github.com/gianlucamazza/mcp-duckduckgo)
 - LLM state-machine DSL: [mklang](https://github.com/gianlucamazza/mklang)
 
 ## Stack
