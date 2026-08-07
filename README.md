@@ -34,4 +34,5 @@ AI at Kiara Industries and CTO in a couple of earlier ventures.
 #### Elsewhere
 
 [gianlucamazza.it](https://gianlucamazza.it) ·
-[LinkedIn](https://www.linkedin.com/in/gianlucamazza)
+[LinkedIn](https://www.linkedin.com/in/gianlucamazza) ·
+[X](https://x.com/gmazza1989)
