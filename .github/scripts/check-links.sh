@@ -35,6 +35,13 @@ check_github_repo() {
 }
 
 for file in "${files[@]}"; do
+  if [[ ! -f $file || ! -r $file ]]; then
+    # A typo'd path would otherwise extract zero URLs and pass green.
+    printf 'UNREADABLE %s\n' "$file"
+    status=1
+    continue
+  fi
+
   while read -r url; do
     if [[ $url =~ ^https://github\.com/([^/]+)/([^/#?]+) ]]; then
       check_github_repo "${BASH_REMATCH[1]}/${BASH_REMATCH[2]}" "$url"
