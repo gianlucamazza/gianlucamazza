@@ -1,0 +1,37 @@
+name: readme
+
+# Link rot and staleness happen while the repo sits untouched, so the schedule
+# is the point: a push-only check would never fire.
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - .github/scripts/**
+      - .github/workflows/readme.yml
+  pull_request:
+    paths:
+      - README.md
+      - .github/scripts/**
+      - .github/workflows/readme.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      # check-links.sh asks the GitHub API for repo links; without a token it
+      # falls back to HTML, which is rate-limited from runners and cannot tell
+      # a 404 from a private repo.
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Links
+        run: bash .github/scripts/check-links.sh
+      - name: Freshness
+        run: bash .github/scripts/check-freshness.sh

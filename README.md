@@ -1,13 +1,24 @@
 # Gianluca Mazza
 
-I build **verifiable agent systems and low-level infra**: orchestration with
-real boundaries, capability/taint models that make unauthorized effects hard by
-construction, local LLM inference on odd hardware, and Bitcoin/finance tools
-that actually run.
+I build **verifiable agent systems and production AI infrastructure**:
+orchestration with real boundaries, capability/taint models that make
+unauthorized effects hard by construction, durable state and deterministic
+recovery, local LLM inference on odd hardware, and Bitcoin/finance tools that
+actually run.
 
 Ship style: ADR before code, falsifiable claims, self-hosted on Linux.
 Co-founder of an AI research and engineering venture; previously head of AI and
 CTO roles.
+
+## Currently (Aug 2026)
+
+- Building [orka](https://github.com/gianlucamazza/orka) — multi-agent
+  orchestration in Rust with hard capability boundaries
+- Shipping inspectable affective memory:
+  [emotional-memory](https://github.com/gianlucamazza/emotional-memory) with a
+  citable DOI and reproducible benchmarks
+- Pushing local LLM and Stable Diffusion inference onto console hardware
+  ([xllama](https://github.com/gianlucamazza/xllama))
 
 ## Selected work
 
@@ -22,22 +33,27 @@ CTO roles.
   inspectable affective memory for LLMs with reproducible benchmarks
   ([DOI](https://doi.org/10.5281/zenodo.19972258))
 
+**Bitcoin, finance & tooling**
+
+- [solana-mmaker](https://github.com/gianlucamazza/solana-mmaker) — automated
+  market making on Solana through the Jupiter swap protocol; my most-used
+  project
+- [openfatture](https://github.com/gianlucamazza/openfatture) — open-source
+  FatturaPA e-invoicing for Italian freelancers, CLI-first with AI-assisted
+  workflows
+
 **Systems & strange hardware**
 
 - [xllama](https://github.com/gianlucamazza/xllama) — local LLM chat and Stable
   Diffusion on Xbox Series S|X (llama.cpp GGUF + ONNX Runtime GenAI, CPU and
   DirectML)
-
-**Bitcoin & finance**
-
-- [solana-mmaker](https://github.com/gianlucamazza/solana-mmaker) — automated
-  market making on Solana through the Jupiter swap protocol
+- [harbor-kernel](https://github.com/gianlucamazza/harbor-kernel) — bare-metal
+  AArch64 kernel for the Raspberry Pi 4
 
 **Also**
 
 - E2E agent chat: [agentroom](https://github.com/gianlucamazza/agentroom) over
   [msg2agent](https://github.com/gianlucamazza/msg2agent)
-- Bare-metal Pi4 kernel: [harbor-kernel](https://github.com/gianlucamazza/harbor-kernel)
 - Xbox full node + Linux→UWP toolchain:
   [xbox_bitcoind](https://github.com/gianlucamazza/xbox_bitcoind) ·
   [uwp-crossbuild](https://github.com/gianlucamazza/uwp-crossbuild) ·
@@ -59,3 +75,6 @@ CTO roles.
 [gianlucamazza.it](https://gianlucamazza.it) ·
 [LinkedIn](https://www.linkedin.com/in/gianlucamazza) ·
 [X](https://x.com/gmazza1989)
+
+Open to fractional CTO engagements and collaborations on verifiable agent
+systems.
