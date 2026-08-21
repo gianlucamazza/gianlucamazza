@@ -10,7 +10,7 @@ Ship style: ADR before code, falsifiable claims, self-hosted on Linux.
 Co-founder of an AI research and engineering venture; previously head of AI and
 CTO roles. Available for fractional CTO work.
 
-## Currently
+## Currently (Aug 2026)
 
 - Building [orka](https://github.com/gianlucamazza/orka) — multi-agent
   orchestration in Rust with hard capability boundaries
