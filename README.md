@@ -8,7 +8,7 @@ actually run.
 
 Ship style: ADR before code, falsifiable claims, self-hosted on Linux.
 Co-founder of an AI research and engineering venture; previously head of AI and
-CTO roles. Available for fractional CTO work.
+CTO roles.
 
 ## Currently (Aug 2026)
 
