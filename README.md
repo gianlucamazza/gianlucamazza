@@ -10,7 +10,7 @@ Ship style: ADR before code, falsifiable claims, self-hosted on Linux.
 Co-founder of an AI research and engineering venture; previously head of AI and
 CTO roles.
 
-## Currently (Aug 2026)
+## Currently (Sep 2026)
 
 - Building [orka](https://github.com/gianlucamazza/orka) — multi-agent
   orchestration in Rust with hard capability boundaries
@@ -35,12 +35,11 @@ CTO roles.
 
 **Bitcoin, finance & tooling**
 
-- [solana-mmaker](https://github.com/gianlucamazza/solana-mmaker) — automated
-  market making on Solana through the Jupiter swap protocol; my most-used
-  project
 - [openfatture](https://github.com/gianlucamazza/openfatture) — open-source
   FatturaPA e-invoicing for Italian freelancers, CLI-first with AI-assisted
   workflows
+- [solana-mmaker](https://github.com/gianlucamazza/solana-mmaker) — automated
+  market making on Solana (Jupiter swap protocol)
 
 **Systems & strange hardware**
 
