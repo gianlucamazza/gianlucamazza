@@ -1,10 +1,10 @@
 # Gianluca Mazza
 
-I build **verifiable agent systems and production AI infrastructure**:
-orchestration with real boundaries, capability/taint models that make
-unauthorized effects hard by construction, durable state and deterministic
-recovery, local LLM inference on odd hardware, and Bitcoin/finance tools that
-actually run.
+**Fractional CTO & Software Engineer.** I build and ship **production AI systems**:
+verifiable agent systems, orchestration with real boundaries, capability/taint
+models that make unauthorized effects hard by construction, durable state and
+deterministic recovery, reproducible evals, and cost under control. Local LLM
+inference on odd hardware and Bitcoin/finance tools that actually run.
 
 Ship style: ADR before code, falsifiable claims, self-hosted on Linux.
 Co-founder of an AI research and engineering venture; previously head of AI and
