@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# Fail if the "Currently" section has gone stale.
+# Fail if a dated "Currently" section has gone stale.
 #
 # A "what I'm working on now" section is only worth having if it is true. Left
 # alone it does not break, it just quietly starts lying, which is worse than
 # not having it. Dating the heading and failing the weekly run turns that into
-# something I actually find out about.
+# something I actually find out about. No heading is fine: the section was
+# dropped on purpose.
 #
 # Usage: bash .github/scripts/check-freshness.sh [file]
 
@@ -13,9 +14,14 @@ set -euo pipefail
 max_age_months=${MAX_AGE_MONTHS:-6}
 file=${1:-README.md}
 
-heading=$(grep -m1 -E '^## Currently \(' "$file") || {
-  echo "no dated '## Currently (Mon YYYY)' heading in $file" >&2
+if [[ ! -f $file || ! -r $file ]]; then
+  echo "UNREADABLE $file" >&2
   exit 1
+fi
+
+heading=$(grep -m1 -E '^## Currently \(' "$file") || {
+  echo "ok: no dated 'Currently' section"
+  exit 0
 }
 
 stamp=$(sed -E 's/^## Currently \(([^)]+)\).*/\1/' <<<"$heading")
