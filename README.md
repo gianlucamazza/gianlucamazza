@@ -1,37 +1,16 @@
-# Gianluca Mazza
+I take LLM systems into production.
 
-**Fractional CTO & Software Engineer.** I build and ship **production AI systems**:
-verifiable agent systems, orchestration with real boundaries, capability/taint
-models that make unauthorized effects hard by construction, durable state and
-deterministic recovery, reproducible evals, and cost under control. Local LLM
-inference on odd hardware and Bitcoin/finance tools that actually run.
-
-Ship style: ADR before code, falsifiable claims, self-hosted on Linux.
-Co-founder of an AI research and engineering venture; previously head of AI and
-CTO roles.
-
-## Currently (Sep 2026)
-
-- Building [orka](https://github.com/gianlucamazza/orka) — multi-agent
-  orchestration in Rust with hard capability boundaries
-- Shipping inspectable affective memory:
-  [emotional-memory](https://github.com/gianlucamazza/emotional-memory) with a
-  citable DOI and reproducible benchmarks
-- Pushing local LLM and Stable Diffusion inference onto console hardware
-  ([xllama](https://github.com/gianlucamazza/xllama))
+- [orka](https://github.com/gianlucamazza/orka)
+- [emotional-memory](https://github.com/gianlucamazza/emotional-memory) ([DOI](https://doi.org/10.5281/zenodo.19972258))
+- [xllama](https://github.com/gianlucamazza/xllama) on Xbox
 
 ## Selected work
 
 **Agents & security**
 
-- [orka](https://github.com/gianlucamazza/orka) — agent orchestration in Rust:
-  multi-channel intake, priority queues, MCP/A2A, sandboxed skills
 - [reasoning-kernel](https://github.com/gianlucamazza/reasoning-kernel) — prompt
   injection cannot produce an unauthorized effect by construction (CaMeL-style
   capabilities + taint tracking)
-- [emotional-memory](https://github.com/gianlucamazza/emotional-memory) —
-  inspectable affective memory for LLMs with reproducible benchmarks
-  ([DOI](https://doi.org/10.5281/zenodo.19972258))
 
 **Bitcoin, finance & tooling**
 
@@ -43,9 +22,6 @@ CTO roles.
 
 **Systems & strange hardware**
 
-- [xllama](https://github.com/gianlucamazza/xllama) — local LLM chat and Stable
-  Diffusion on Xbox Series S|X (llama.cpp GGUF + ONNX Runtime GenAI, CPU and
-  DirectML)
 - [harbor-kernel](https://github.com/gianlucamazza/harbor-kernel) — bare-metal
   AArch64 kernel for the Raspberry Pi 4
 
