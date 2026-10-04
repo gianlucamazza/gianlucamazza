@@ -14,6 +14,11 @@ set -euo pipefail
 max_age_months=${MAX_AGE_MONTHS:-6}
 file=${1:-README.md}
 
+if [[ ! -f $file || ! -r $file ]]; then
+  echo "UNREADABLE $file" >&2
+  exit 1
+fi
+
 heading=$(grep -m1 -E '^## Currently \(' "$file") || {
   echo "ok: no dated 'Currently' section"
   exit 0
